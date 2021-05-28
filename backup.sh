@@ -5,5 +5,5 @@ sources=(
         )
 for source in "${sources[@]}"; do
     touch "$log"
-    rsync -av "$source" --log-file="$log" /foo/destination
+    rsync -ai "$source" --log-file="$log" /foo/destination
     done
